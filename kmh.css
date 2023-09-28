@@ -815,6 +815,59 @@ body {
         margin: 0 25px;
     }
 
+    /* Version 2.0 KM/H ADAPTATION */
+    .container__kmh {
+        display: none;
+    }
+
+    .container__kmh_mobile {
+        display: flex;
+        flex-direction: row;
+        margin-top: 13px;
+    }
+
+    .compas {
+        margin-right: 12px;
+    }
+
+    .kmh__small {
+        margin-left: 4px;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .kmh__num {
+        font-size: 30px;
+        font-weight: 700;
+    }
 }
 
 /* Version 2.0 (KM/H) */
+
+@media screen and (min-width: 450px) {
+    .container__kmh {
+        font-size: 15px;
+        font-weight: 700;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        left: 35px;
+        bottom: 30px;
+    }
+    
+    .container__kmh_mobile {
+        display: none;
+    }
+    .compas {
+        margin-bottom: 15px;
+    }
+    
+    .kmh__small {
+        margin-bottom: 14px;
+        margin-left: 5px;
+    }
+    
+    .kmh__num {
+     font-size: 45px;
+    }
+}
