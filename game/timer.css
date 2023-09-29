@@ -520,8 +520,6 @@ video {
     fill:inherit;
     } */
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 body {
     font-family: 'Montserrat', sans-serif;
     background: #2D2C2C;
@@ -658,7 +656,7 @@ body {
     flex-direction: row;
 
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .text__cars:not(:last-child) {
@@ -667,7 +665,7 @@ body {
 
 .text__cars p {
     margin-right: 4px;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .text__cars h2 b {
@@ -685,6 +683,8 @@ body {
 .square__cars {
     width: 915px;
     height: 490px;
+    display: flex;
+    justify-content: center;
     flex-shrink: 0;
     border-radius: 39.584px;
     background: #5A5A5A;
@@ -694,9 +694,9 @@ body {
 .container__arrow {
     width: 168px;
     margin: 0;
-    position: absolute;
-    right: 55px;
-    bottom: 30px;
+    /* position: absolute; */
+    /* right: 55px;
+    bottom: 30px; */
 }
 
 .arrow__up__container {
@@ -738,7 +738,7 @@ body {
 @media screen and (max-width: 450px) {
 
     .mobile_hidden {
-        display: none;
+        display: none !important;
     }
 
     .block__cars {
@@ -748,9 +748,10 @@ body {
 
     .mobile_logo {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        margin-bottom: 24px;
+        margin-bottom: 33px;
     }
 
     .descrip__cars {
@@ -802,7 +803,7 @@ body {
         width: 168px;
         margin: 0 auto;
         position: absolute;
-        bottom: 100px;
+        bottom: 50px;
         left: 0;
         right: 0;
     }
@@ -815,6 +816,301 @@ body {
         margin: 0 25px;
     }
 
+    /* Version 3.0 (timer) Adaptation*/
+    .mobile_logo svg {
+        margin-bottom: 17px;
+    }
+
+    .mobile_logo h1 {
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 2px;
+        line-height: 26px;
+    }
+
+    .mobile_logo h2 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .mobile-sq__up {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 12px;
+        font-weight: 200;
+        margin-bottom: 14px;
+    }
+
+    .mobile-up__left {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mobile-up__right {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mobile__position h2, .mobile__lap h2 {
+        margin-bottom: 7px;
+    }
+    .mobile__position h1, .mobile__lap h1 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .mobile__position {
+        margin-right: 31px;
+    }
+
+    .mobile__help {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 13px;
+    }
+
+    .mobile__battery {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .mobile__help h2, .mobile__battery h2 {
+        margin-bottom: 4px;
+    }
+
+    .mobile-sq__down {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 9px;
+    }
+
+    .mobile-down__left {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 5px;
+    }
+
+    .mobile__kmh {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    
+    .compas {
+        margin-right: 12px;
+    }
+
+    .m_kmh {
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+    }
+
+    .m_kmh p {
+        font-size: 12px;
+        margin-left: 7px;
+        margin-bottom: 4px;
+    }
+
+    .m_kmh h1 {
+        font-size: 30px;
+    }
+
+    .mobile__best {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .mobile__best h2 {
+        font-size: 12px;
+        font-weight: 200;
+        margin: 0;
+    }
+
+    .m_b_time_1 {
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+
+    .m_b_time_2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
 }
 
-/* Version 2.0 (KM/H) */
+/* Version 3.0 (timer) */
+
+.square__cars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.square__up {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.square__down {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Square Up */
+.sq__position, .sq__lap,
+.sq__help, .sq__battery {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+}
+
+.sq__position {
+    left: 40px;
+}
+
+.sq__lap {
+    left: 150px;
+}
+
+.sq__help {
+    right: 150px;
+}
+
+.sq__battery {
+    right: 40px;
+}
+
+.sq__position h1, .sq__lap h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sq__position h2, .sq__lap h2 {
+    margin-bottom: 5px;
+}
+
+.sq__help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sq__help h2 {
+    margin-bottom: 5px;
+}
+
+.sq__battery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sq__battery h2 {
+    margin-bottom: 5px;
+}
+
+/* Square down */
+
+.sq__best {
+    position: absolute;
+    bottom: 39px;
+}
+
+@media screen and (min-width: 450px) {
+    .container__arrow,
+    .sq__kmh, .sq__title {
+        position: absolute;
+        bottom: 30px;
+    }
+    
+    .container__arrow {
+        left: 260px;
+    }
+
+}
+
+
+
+.sq__best {
+    display: flex;
+    flex-direction: column;
+    left: 40px;
+}
+
+.sq__best h2 {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.b_time_1 {
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.b_time_2 {
+    margin-top: 15px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.sq__kmh {
+    right: 270px;
+    display: flex;
+    flex-direction: row;
+}
+
+.kmh {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+}
+
+.kmh p {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.kmh h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.sq__title {
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sq__title svg {
+    margin-bottom: 9px;
+}
+
+.sq__title h1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.sq__title h2 {
+    font-size: 16px;
+    font-weight: 300;
+}

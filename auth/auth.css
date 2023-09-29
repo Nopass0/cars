@@ -513,361 +513,248 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-/* SVG Inherit */
-/* svg path {
-    stroke:inherit;
-    stroke-width:inherit;
-    fill:inherit;
-    } */
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #2D2C2C;
+    background: #F0F0F0;
     color: #fff;
     line-height: 19px;
     overflow: hidden;
 
 }
 
-/* Header */
+
 @media screen and (min-width: 450px) {
-    .__header {
-        width: 1508px;
-        margin: 0 auto 71px auto;
-        padding: 0 141px;
-    }
     .container {
         max-width: 1508px;
         margin: 0 auto 0 auto;
         padding: 0 141px;
     }
+    .general_block {
+      width: 1226px;
+      margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 450px)  {
-    .__header {
-        width: 100%;
-        margin-bottom: 71px;
-        padding: 0 31px;
-    }
     .container {
         padding: 0 31px;
     }
 }
 
-
-.nav__header {
-    padding: 51px 0 0 0;
+.general_block {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-.logo__header a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
+
+.society {
+    margin-top: 20px;
 }
 
-.ul__header {
+.ul_society {
     display: flex;
-    align-items: center;
-    text-align: center;
     flex-direction: row;
+
 }
 
-.li__header {
+.li_society:not(:last-child) {
+    margin-right: 22px;
+}
+
+.auth_block {
+    width: 980px;
+    height: 680px;
+    border-radius: 39.584px;
+    background: #2D2C2C;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.auth_header {
+    position: absolute;
+    top: 40px;
+    left: 50px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
+    line-height: 19px;
     color: rgba(223, 217, 217, 0.50);
 }
 
-.li__header:hover {
-    color: #fff;
-    transition: all .3s;
+.auth_header a:hover {
+  color: white;
+  transition: all .3s ease-out;
 }
 
-.li__header:not(:last-child) {
-    margin-right: 36px;
-}
-
-/* Cars Block 1 */
-.header__cars {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 32px;
-}
-
-.title__cars {
-    font-size: 45px;
-    font-weight: 400;
-    font-style: normal;
-    margin-right: 6px;
-    line-height: 48px;
-}
-
-.offline__cars {
-    display: none;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 26px;
-    border-radius: 46.005px;
-    background: #DB2727;
-    padding: 6px 25px;
-}
-
-.online__cars {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 26px;
-    border-radius: 46.005px;
-    background: #73A87B;
-    padding: 6px 25px;
-
-}
-
-.block__cars {
-    display: flex;
-    flex-direction: row;
-}
-
-
-/* DESCRIPTION */
-
-.descrip__cars {
-    width: 274px;
-    height: 490px;
-    flex-shrink: 0;
-    border-radius: 39.584px;
-    background: #1C1A1A;
-    
-    
-}
-
-.container__cars {
+.auth_container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 53px 27px 28px 16px;
 }
 
-.text__cars {
-    display: flex;
-    flex-direction: row;
-
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.text__cars:not(:last-child) {
-    margin-bottom: 25px;
-}
-
-.text__cars p {
-    margin-right: 4px;
-    font-weight: 400;
-}
-
-.text__cars h2 b {
+.auth_container h1 {
+    font-size: 45px;
     font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 28px;
 }
 
-/* SQUARE CARS */
-
-@media screen and (min-width: 450px) {
-    .square__cars {
-        position: relative;
-    }
-}
-
-.square__cars {
-    width: 915px;
-    height: 490px;
-    flex-shrink: 0;
-    border-radius: 39.584px;
-    background: #5A5A5A;
-    margin-right: 29px;
-}
-
-.container__arrow {
-    width: 168px;
-    margin: 0;
-    position: absolute;
-    right: 55px;
-    bottom: 30px;
-}
-
-.arrow__up__container {
+.auth_input {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
 }
 
-.arrows__3 {
+.auth_input input {
+    width: 432.637px;
+    height: 61.818px;
+}
+
+.auth_input__mail {
+    margin-bottom: 28px;
+}
+
+.auth_input__pswd {
+    margin-bottom: 53px;
+}
+
+.auth_input input {
+    border-radius: 36.844px;
+    border: 1px solid #6D6D6D;
+    background: none;
+}
+
+
+.auth_input input[type=email], .auth_input input[type=password] {
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFF;
+    padding-left: 29px;
+}
+
+.auth_input input::placeholder {
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.auth_button {
+    width: 438.464px;
+    height: 68.842px;
+    border-radius: 36.844px;
+    background: #DB2727; 
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.auth_button:hover, .auth_button:focus {
+    background: #FFF;
+    color: #3E3C41;
+    transition: all .3s ease-out;
+}
+
+.auth_logo {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-top: 7px;
 }
-
-.arrows__down {
-    margin: 0 7px;
-}
-
-.arrows__up-btn svg rect{
-    fill: black;
-    fill-opacity: .26;
-}
-
-
-.arrows__up-btn svg rect:hover,.arrows__up-btn svg rect:active,
-.arrows__down-btn svg rect:hover,.arrows__down-btn svg rect:active, 
-.arrows__left-btn svg rect:hover,.arrows__left-btn svg rect:active,
-.arrows__right-btn svg rect:hover,.arrows__right-btn svg rect:active {
-    fill: #DA2827;
-    fill-opacity: 1;
-}
-
 
 /* Adaptation */
 
 .pc_hidden {
-    display: none;
+  display: none;
 }
+
 @media screen and (max-width: 450px) {
+  .mobile_hidden {
+    display: none;
+  }
 
-    .mobile_hidden {
-        display: none;
-    }
+  
+  .general_block {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .auth_block {
+    width: 330px;
+    height: 550px;
+    margin-bottom: 170px;
+  }
 
-    .block__cars {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .mobile_logo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-bottom: 24px;
-    }
-
-    .descrip__cars {
-        display: none;
-    }
-
-    .ul__header-mobile {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    
-    .li__header {
-        font-size: 15px;
-        line-height: 16px;
-        font-weight: 400;
-    }
-    
-    .li__header:not(:last-child) {
-        margin-right: 12px;
-    }
-
-    .mobile__container-li {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .square__cars {
-        width: clamp(329px, 100%, 400px);
-        height: 180px;
-        display: flex;
-        justify-content: center;
-        border-radius: 10px;
-        background: #5A5A5A;
-    }
-
-    .mobile__container-title li {
-    color: rgba(255, 255, 255, 0.50);
+  .mobile_header {
+    display: flex;
+    color: rgba(45, 44, 44, 0.50);
     font-size: 15px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 105.8%; /* 15.87px */
-    }
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
 
-    .container__arrow {
-        width: 168px;
-        margin: 0 auto;
-        position: absolute;
-        bottom: 100px;
-        left: 0;
-        right: 0;
-    }
+  }
 
-    .arrows__3 {
-        margin-top: 25px;
-    }
+  .mobile_society {
+    width: 330px;
 
-    .arrows__down {
-        margin: 0 25px;
-    }
+    display: flex;
+    justify-content: center;
+  }
+  .m_auth_logo {
+    display: flex;
+    margin-bottom: 31px;
+  }
 
-    /* Version 2.0 KM/H ADAPTATION */
-    .container__kmh {
-        display: none;
-    }
+  .auth_container h1 {
+    text-align: center;
+    max-width: 240px;
+    font-size: 30px;
+    font-weight: 700;
+    white-space: pre-wrap;
+    line-height: 31px;
+    margin-bottom: 31px;
+  }
 
-    .container__kmh_mobile {
-        display: flex;
-        flex-direction: row;
-        margin-top: 13px;
-    }
+  .auth_input input {
+    width: 275px;
+    height: 50px;
+  }
 
-    .compas {
-        margin-right: 12px;
-    }
+  .auth_button {
+    width: 275px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 700;
+  }
 
-    .kmh__small {
-        margin-left: 4px;
-        font-size: 12px;
-        font-weight: 700;
-    }
+  .mobile_car {
+    display: block;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+  }
 
-    .kmh__num {
-        font-size: 30px;
-        font-weight: 700;
-    }
+.auth_input input[type=email], .auth_input input[type=password] {
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFF;
+    padding-left: 29px;
 }
 
-/* Version 2.0 (KM/H) */
-
-@media screen and (min-width: 450px) {
-    .container__kmh {
-        font-size: 15px;
-        font-weight: 700;
-        display: flex;
-        position: absolute;
-        flex-direction: column;
-        left: 35px;
-        bottom: 30px;
-    }
-    
-    .container__kmh_mobile {
-        display: none;
-    }
-    .compas {
-        margin-bottom: 15px;
-    }
-    
-    .kmh__small {
-        margin-bottom: 14px;
-        margin-left: 5px;
-    }
-    
-    .kmh__num {
-     font-size: 45px;
-    }
+.auth_input input::placeholder {
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFF;
+}
+  .mobile_car {
+    width: 419.709px;
+    height: 280.757px;
+    display: block;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    background: url("../src/auth_car.png") no-repeat;
+  }
 }
