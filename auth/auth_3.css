@@ -708,11 +708,12 @@ body {
 /* IMG */
 .img_car {
   position: absolute;
-  left: -240px;
+  left: -290px;
   bottom: -200px;
   width: 1000px;
   height: 669px;
   background: url('../src/full_car.png') no-repeat;
+  z-index: 2;
 }
 
 /* Adaptation */
@@ -796,8 +797,8 @@ body {
     width: 419.709px;
     height: 280.757px;
     display: block;
-    position: absolute;
-    bottom: 20px;
+    position: fixed;
+    bottom: 60px;
     left: 0;
     background: url("../src/auth_car.png") no-repeat;
   }
@@ -827,6 +828,18 @@ body {
   .auth_user {
     font-size: 18px;
     margin-bottom: 90px;
+  }
+  .auth {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+  .auth::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 }
 

@@ -519,6 +519,7 @@ body {
     color: #fff;
     line-height: 19px;
     overflow: hidden;
+    position: relative;
 
 }
 
@@ -537,7 +538,7 @@ body {
 
 @media screen and (max-width: 450px)  {
     .container {
-        padding: 0 31px;
+        margin: 0 31px;
     }
 }
 
@@ -746,7 +747,7 @@ body {
     width: 419.709px;
     height: 280.757px;
     display: block;
-    position: absolute;
+    position: fixed;
     bottom: 60px;
     left: 0;
     background: url("../src/auth_car.png") no-repeat;
@@ -755,11 +756,27 @@ body {
   body {
     position: relative;
     height: 844px;
+    overflow-x: hidden;
   }
+
+  .auth {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+  .auth::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
 }
 
 @media screen and (max-width: 389px) {
   body {
+    overflow-x: hidden;
     overflow-y: auto;
   }
 }
@@ -767,4 +784,15 @@ body {
 .li_society:hover > .society > svg path {
   fill: #DB2727;
   transition: all .2s ease-out;
+}
+
+/* IMG PC */
+.img_car {
+  position: absolute;
+  left: -290px;
+  bottom: -200px;
+  width: 1000px;
+  height: 669px;
+  background: url('../src/full_car.png') no-repeat;
+  z-index: 2;
 }
