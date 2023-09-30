@@ -538,7 +538,7 @@ body {
 
 @media screen and (max-width: 450px)  {
     .__header {
-        width: 100%;
+        width: clamp(300px, 100%, 400px);
         margin-bottom: 71px;
         padding: 0 31px;
     }
@@ -681,7 +681,7 @@ body {
     margin-right: 29px;
 }
 
-.container__arrow {
+.container__arrow { 
     width: 168px;
     margin: 0;
     position: absolute;
@@ -737,6 +737,7 @@ body {
     }
 
     .mobile_logo {
+        width: 283px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -772,7 +773,7 @@ body {
     }
     
     .square__cars {
-        width: clamp(329px, 100%, 400px);
+        width: clamp(300px, 100%, 400px);
         height: 180px;
         display: flex;
         justify-content: center;
