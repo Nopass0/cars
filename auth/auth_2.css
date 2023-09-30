@@ -786,4 +786,12 @@ body {
     font-size: 12px;
     font-weight: 600;
   }
+
+}
+
+@media screen and (max-width: 389px) {
+  body {
+    overflow-x: auto;
+    overflow-y: auto;
+  }
 }

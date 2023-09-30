@@ -697,8 +697,9 @@ body {
   }
 
   .mobile_society {
+    /* position: absolute; */
+    bottom: 0;
     width: 330px;
-
     display: flex;
     justify-content: center;
   }
@@ -729,13 +730,6 @@ body {
     font-weight: 700;
   }
 
-  .mobile_car {
-    display: block;
-    position: absolute;
-    bottom: 60px;
-    left: 0;
-  }
-
 .auth_input input[type=email], .auth_input input[type=password] {
     font-size: 15px;
     font-weight: 600;
@@ -756,5 +750,10 @@ body {
     bottom: 60px;
     left: 0;
     background: url("../src/auth_car.png") no-repeat;
+  }
+
+  body {
+    position: relative;
+    height: 844px;
   }
 }
