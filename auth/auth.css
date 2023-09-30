@@ -757,3 +757,9 @@ body {
     height: 844px;
   }
 }
+
+@media screen and (max-width: 389px) {
+  body {
+    overflow-y: auto;
+  }
+}
