@@ -732,6 +732,7 @@ body {
     width: 330px;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
   }
   .m_auth_logo {
     display: flex;
@@ -765,7 +766,7 @@ body {
     height: 280.757px;
     display: block;
     position: fixed;
-    bottom: 60px;
+    bottom: 30px;
     left: 0;
     background: url("../src/auth_car.png") no-repeat;
   }
