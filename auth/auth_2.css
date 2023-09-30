@@ -518,7 +518,7 @@ body {
     background: #F0F0F0;
     color: #fff;
     line-height: 19px;
-    overflow-x: hidden;
+    overflow: auto;
     position: relative;
 
 }
