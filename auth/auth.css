@@ -763,3 +763,8 @@ body {
     overflow-y: auto;
   }
 }
+
+.li_society:hover > .society > svg path {
+  fill: #DB2727;
+  transition: all .2s ease-out;
+}
