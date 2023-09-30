@@ -797,6 +797,11 @@ body {
   height: 669px;
   background: url('../src/full_car.png') no-repeat;
   z-index: 2;
+
+  .auth {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-height:840px) {
@@ -807,7 +812,8 @@ body {
 
 @media (max-width:351px) {
   body {
-    overflow-x: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .mobile_car {
@@ -816,13 +822,20 @@ body {
 
   .mobile_header {
     margin: 20px auto;
-    width: 300px;
+    width: 290px;
   }
   .auth_block {
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    width: 290px;
   }
 
+  .auth_input input {
+    width: 250px;
+  }
+
+  .auth_button {
+    width: 250px;
+  } 
 
 }

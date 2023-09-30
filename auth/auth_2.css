@@ -518,7 +518,7 @@ body {
     background: #F0F0F0;
     color: #fff;
     line-height: 19px;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
 
 }
@@ -812,4 +812,40 @@ body {
 .li_society:hover > .society > svg path {
   fill: #DB2727;
   transition: all .2s ease-out;
+}
+
+@media (max-height:840px) {
+  .mobile_car {
+    position: absolute;
+  }
+}
+
+@media (max-width:351px) {
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .mobile_car {
+    left: -50px;
+  }
+
+  .mobile_header {
+    margin: 20px auto;
+    width: 290px;
+  }
+  .auth_block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 290px;
+  }
+
+  .auth_input input {
+    width: 250px;
+  }
+
+  .auth_button {
+    width: 250px;
+  } 
+
 }
