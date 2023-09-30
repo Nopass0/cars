@@ -534,6 +534,7 @@ body {
     .general_block {
       width: 1226px;
       margin-top: 50px;
+      padding-right: 30px;
     }
 }
 
