@@ -518,13 +518,14 @@ body {
     background: #F0F0F0;
     color: #fff;
     line-height: 19px;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: auto;
     position: relative;
 
 }
 
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 451px) {
     .container {
         max-width: 1508px;
         margin: 0 auto 0 auto;
@@ -538,11 +539,12 @@ body {
 
 @media screen and (max-width: 450px)  {
     .container {
-        margin: 0 31px;
+        margin: 0 auto;
     }
 }
 
 .general_block {
+    /* width: clamp(300px,100%,1226px); */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -756,13 +758,13 @@ body {
   body {
     position: relative;
     height: 844px;
-    overflow-x: hidden;
   }
 
   .auth {
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -795,4 +797,32 @@ body {
   height: 669px;
   background: url('../src/full_car.png') no-repeat;
   z-index: 2;
+}
+
+@media (max-height:840px) {
+  .mobile_car {
+    position: absolute;
+  }
+}
+
+@media (max-width:351px) {
+  body {
+    overflow-x: auto;
+  }
+
+  .mobile_car {
+    left: -50px;
+  }
+
+  .mobile_header {
+    margin: 20px auto;
+    width: 300px;
+  }
+  .auth_block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+
+
 }

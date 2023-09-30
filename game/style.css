@@ -518,7 +518,7 @@ body {
     background: #2D2C2C;
     color: #fff;
     line-height: 19px;
-    overflow: hidden;
+    overflow: auto;
 
 }
 
@@ -538,8 +538,8 @@ body {
 
 @media screen and (max-width: 450px)  {
     .__header {
-        width: clamp(300px, 100%, 400px);
-        margin-bottom: 71px;
+        width: clamp(200px, 100%, 500px);
+        margin-bottom: 31px;
         padding: 0 31px;
     }
     .container {
@@ -549,7 +549,7 @@ body {
 
 
 .nav__header {
-    padding: 51px 0 0 0;
+    padding: 20px 0 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -737,7 +737,7 @@ body {
     }
 
     .mobile_logo {
-        width: 283px;
+        width: clamp(200px,100%,368px);
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -764,7 +764,7 @@ body {
     }
     
     .li__header:not(:last-child) {
-        margin-right: 12px;
+        margin-right: 6px;
     }
 
     .mobile__container-li {
@@ -773,7 +773,7 @@ body {
     }
     
     .square__cars {
-        width: clamp(300px, 100%, 400px);
+        width: clamp(200px, 100%, 400px);
         height: 180px;
         display: flex;
         justify-content: center;
