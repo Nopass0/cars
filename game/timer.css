@@ -531,13 +531,23 @@ body {
 /* Header */
 @media screen and (min-width: 450px) {
     .__header {
-        width: 1508px;
+        width: clamp(1100px,100%,1508px);
         margin: 0 auto 71px auto;
-        padding: 0 141px;
+        padding: 0 100px;
     }
+
     .container {
         max-width: 1508px;
         margin: 0 auto 0 auto;
+        padding: 0 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .__header {
+        padding: 0 141px;
+    }
+    .container {
         padding: 0 141px;
     }
 }
@@ -1124,4 +1134,29 @@ body {
     .container__arrow {
         bottom: 0;
     }
+}
+
+@media screen and (min-width: 1508px) {
+    .block__cars {
+        display: flex;
+        flex-direction: row;
+    }
+  }
+
+  
+@media screen and (max-width: 1508px) and (min-width: 1200px) {
+    .block__cars {
+      width: 100%;
+    }
+
+    .square__cars {
+      width: 100%;
+    }
+
+  }
+
+@media screen and (max-width:1508px) {
+    .descrip__cars {
+        display: none;
+      }
 }
