@@ -529,7 +529,7 @@ body {
         padding: 0 141px;
     }
     .general_block {
-      width: 1226px;
+      width: clamp(960px,100%,1226px);
       margin-top: 50px;
       padding-right: 30px;
     }
@@ -573,8 +573,18 @@ body {
     justify-content: center;
 }
 
-.auth_header__container {
+@media screen and (max-width: 1420px) {
+  .auth_header__container {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width:1420px) {
+  .auth_header__container {
     width: 880px;
+  }
+}
+.auth_header__container {
     position: absolute;
     left: 50px;
     top: 40px;
@@ -710,7 +720,7 @@ body {
 .img_car {
   position: absolute;
   left: -290px;
-  bottom: -200px;
+  bottom: -280px;
   width: 1000px;
   height: 669px;
   background: url('../src/full_car.png') no-repeat;
@@ -891,4 +901,10 @@ body {
     width: 250px;
   } 
 
+}
+
+@media screen and (min-width:450px) and (max-width:1508px) {
+  .society {
+    margin-right: 30px;
+  }
 }
