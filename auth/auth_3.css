@@ -747,7 +747,7 @@ body {
   .auth_block {
     width: 330px;
     height: 550px;
-    margin-bottom: 170px;
+    margin-bottom: 200px;
   }
 
   .mobile_header {
@@ -867,7 +867,7 @@ body {
   transition: all .2s ease-out;
 }
 
-@media (max-height:840px) {
+@media (max-height:845px) {
   .mobile_car {
     position: absolute;
   }

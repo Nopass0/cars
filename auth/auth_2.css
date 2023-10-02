@@ -702,6 +702,7 @@ body {
   display: none;
 }
 
+
 @media screen and (max-width: 450px) {
   .mobile_hidden {
     display: none;
@@ -768,7 +769,7 @@ body {
     width: 419.709px;
     height: 280.757px;
     display: block;
-    position: fixed;
+    position: absolute;
     bottom: 30px;
     left: 0;
     background: url("../src/auth_car.png") no-repeat;
@@ -818,11 +819,11 @@ body {
   transition: all .2s ease-out;
 }
 
-@media (max-height:840px) {
+/* @media (max-height:900px) {
   .mobile_car {
     position: absolute;
   }
-}
+} */
 
 @media (max-width:351px) {
   body {
